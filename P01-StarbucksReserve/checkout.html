@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>P01 - Style Guide Template - Checkout</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700|Source+Code+Pro:200" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <!-- brand mark (LINKED TO STYLESHEET)-->
+    <div>
+      <a href="index.html">
+        <img src="sources/logo.png" class="padding-down" alt="HTML tutorial" style="width:35px">
+      </a>
+    </div>
+
+    <!-- Navigation bar -->
+    <div class="dropdown">
+        <button>
+          <div class="menu-button"></div>
+          <div class="menu-button"></div>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">About Us</a>
+          <a href="#">Events</a>
+          <a href="#">Our Locations</a>
+          <a href="#">Our Coffees</a>
+          <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Checkout's flexbox -->
+    <section class="element_pages">
+      <h2>CHECKOUT</h2>
+
+      <div class="container-checkout">
+
+        <div class="block-checkout" id="block-flex-grow-1">
+          <h4>COLOMBIA HUILA PINK BOURBON</h4>
+          <img src="sources/ColombiaHuilaPinkBourbon.jpg" alt="HTML tutorial" style="width:100%">
+          <h5><a>C$95 (12oz, 340g)<br><a href = "checkout.html" class="in-text-style">delete from cart</a></h5>
+        </div>
+
+        <div class="block-checkout" id="block-flex-grow-1">
+          <h4>SUN-DRIED UGANDA RED CHERRY</h4>
+          <img src="sources/SDUgandaRedCherry.jpg" alt="HTML tutorial" style="width:100%">
+          <h5>C$85 (16oz, 440g)<br><a href = "checkout.html" class="in-text-style">delete from cart</a></h5>
+        </div>
+
+        <div class="block-checkout" id="block-flex-grow-2">
+          <!-- <div id="payment-margin"> -->
+            <h3>Total Amount: C$180</h3>
+            <ol type="1">
+              <li>COLOMBIA HUILA PINK BOURBON - C$95</li>
+              <li>SUN-DRIED UGANDA RED CHERRY - C$85</li>
+            </ol>
+          <!-- </div> -->
+
+          <!-- PAYMENT FORM -->
+          <!-- <div id="payment-margin" > -->
+            <h3>Payment method:</h3>
+            <label class="payment-method">Visa
+              <input type="radio" checked="checked" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="payment-method">MasterCard
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="payment-method">PayPal
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            <label class="payment-method">Starbucks Rewards Card
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+
+          <br>
+
+          <form>
+            <label>NAME ON CARD: </label><br>
+            <input type="text" name="number">
+          </form>
+
+            <form>
+              <label>CARD NUMBER: </label><br>
+              <input type="text" name="number" placeholder="XXXX XXXX XXXX XXXX">
+            </form>
+
+            <form>
+              <label>CVC: </label><br>
+              <input type="text" name="number" placeholder="XXX">
+            </form>
+            <br>
+            <a class="button-submit" href="#">Submit</a>
+
+          <!-- </div> -->
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- brand mark -->
+    <footer>
+      <img src="sources/brand.png"  class="padding-down" alt="HTML tutorial" style="width:200px">
+    </footer>
+
+  <body>
+
+</html>

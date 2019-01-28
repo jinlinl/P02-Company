@@ -1,0 +1,424 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+html {
+    background-color: rgb(33, 33, 33);
+    width: 100%;
+    height: 100%;
+}
+
+header {
+  padding:4em 4em 0 4em;
+}
+
+body {
+  font-family:'Source Code Pro', monospace;
+  font-style: normal;
+  line-height: 1.5em;
+  font-weight: 100;
+  color: white;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.button-nav, .button-submit {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.element {
+  padding:4em;
+  margin-bottom: 2em;
+  border-top-width: 0.1em;
+  border-top-style: solid;
+  border-top-color: black;
+}
+
+.element_pages {
+  padding: 2em;
+  margin-bottom: 2em;
+  border: none;
+}
+
+code {
+  background-color: #000;
+  padding: 0.5em;
+  display: block;
+}
+
+img {
+  display: flow-root;
+  margin: auto;
+}
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for in-text link */
+.in-text-style  {
+  color: white;
+  font-style: italic;
+  font-size: 0.8em;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+}
+
+.in-text-style:hover, .in-text-style:focus {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.5em 2em;
+  background-color: rgb(20, 20, 20);
+  margin: 0 0 0 0;
+  margin-right: 0;
+  box-sizing: content-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  color: white;
+  transition-duration: 0.3s;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: rgb(207, 131, 42);
+}
+
+
+/* Styling for the navigation button and submit button */
+.button-submit {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  text-decoration: none;
+  color: grey;
+}
+
+.button-submit:hover, .button-submit:focus {
+  text-decoration: none;
+  transition-duration: 0.3s;
+  color: rgb(207, 131, 42);
+}
+
+/* Styling for Text input field with label */
+input {
+  width: 300px;
+  padding: 8px 20px;
+  margin: 3px 0;
+  box-sizing: border-box;
+  border-color: rgb(207, 131, 42);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-width: 1px;
+  background-color: rgb(33, 33, 33);
+  color: rgb(207, 131, 42);
+  font-size: 0.9em;
+}
+
+input:hover, :focus {
+  outline: none;
+}
+
+
+/* Styling Radio button with label */
+/* The container */
+.payment-method {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  font-style: normal;
+  color: white;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.payment-method input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.payment-method:hover input ~ .checkmark {
+  background-color: grey;
+}
+
+/* When the radio button is checked, add a golden background */
+.payment-method input:checked ~ .checkmark {
+  background-color: rgb(207, 131, 42);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.payment-method input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Styling form */
+form {
+  padding: 1em 0 1em 0;
+}
+
+/* Styling Image as a link */
+.image-main:hover, .image-main:focus {
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+/* Styling numbered lists */
+ol {
+  color: rgb(220, 220, 220);
+  margin-bottom: 2em;
+}
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+h1 {
+  font-family: freight-sans-pro, sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: white;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 3.2rem;
+  letter-spacing: 0.5em;
+  opacity: 0.1;
+  margin-top: 0.8em;
+  margin-bottom: 0.3em;
+}
+
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 1em;
+  font-weight: 100;
+  font-size: 1.8rem;
+  color: rgb(207, 131, 42);
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 0.25em;
+}
+
+h5 {
+  /* font-family:'Source Code Pro', monospace; */
+  font-size: 0.8rem;
+  margin-top: 0.8em;
+}
+
+p {
+  margin-top: 0;
+  width: 70%;
+}
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+/* Styling Main navigation */
+.padding-down {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+nav {
+  background-color: black;
+  margin: 0;
+}
+
+nav a, .dropdown-content a {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 1.5rem;
+  line-height: 1.8em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 1em;
+  font-weight: 100;
+  color: white;
+}
+
+nav a:hover, nav a:focus, .dropdown-content a:hover, .dropdown-content a:focus {
+  text-decoration: none;
+  transition-duration: 0.3s;
+  color: rgb(207, 131, 42);
+}
+
+  /* Styling for the navigation bar in responsive webpages*/
+  button {
+    background: none;
+    border: none;
+  }
+
+  .menu-button {
+  width: 35px;
+  height: 3px;
+  background-color: rgb(207, 131, 42);
+  margin: 6px 0;
+  }
+
+  .dropdown button:hover, :focus{
+   transform: rotate(90deg);
+   transition: 0.5s;
+  }
+
+  .dropdown {
+  display: inline;
+  width: 100%;
+  margin: 0 0 1em 0;
+  border: none;
+  }
+
+  .dropdown-content {
+  display: none;
+  /* position: absolute; */
+  background: none;
+  padding-top: 1em;
+  padding-left: 0em;
+  margin-left: 0;
+  width: 100%;
+  z-index: 1;
+  width: 100%;
+  }
+
+  .dropdown-content a {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: auto;
+  padding-right: auto;
+  display: block;
+  text-align: left;
+  }
+
+  .dropdown-content a:hover, :focus {
+    transform: translateX(20px);
+    transition: 0.5s;
+  }
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+
+/* Styling Product listing's and checkout's container */
+* {
+	box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.container div {
+  border: none;
+  padding: 2%;
+}
+
+.container img {
+  opacity: 1;
+}
+
+.container img:hover, :focus {
+  opacity: 0.8;
+}
+
+.container-checkout {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.container-checkout div {
+  border: none;
+  padding: 1.5%;
+}
+
+.block {
+	flex-grow: 1;
+	flex-basis: 350px;
+}
+
+.block-checkout {
+	flex-basis: 270px;
+}
+
+#block-flex-grow-1 {
+  flex-grow: 1;
+}
+
+#block-flex-grow-2 {
+  flex-grow: 6;
+  margin-top: 4em;
+  border-radius: 0.5em;
+  border: 1px solid rgb(207, 131, 42);
+  padding:0 2em 2em 2em;
+}
+
+
+/* Responsive!! */
+@media screen and (max-width: 992px) {
+  body {
+    line-height: normal;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .container, .container-checkout {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin:2%;
+    line-height: normal;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .container, .container-checkout {
+    justify-content: space-around;
+    flex-direction: column;
+    margin:0;
+  }
+}

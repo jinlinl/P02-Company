@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>P01 - Style Guide Template</title>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <header>
+    <h1>STARBUCKS RESERVE &trade;</h1>
+
+    <p>A template you can use to start building out your own style guides with.</p>
+  </header>
+
+  <section class="element">
+    <h3>Navigation</h3>
+    <nav>
+      <a href="#interactive_elements">Interactive Elements</a><br>
+      <a href="#text_elements">Text Elements</a><br>
+      <a href="#combined_elements">Combined Elements</a><br>
+      <a href="product-listing.html">Product Listing Template</a><br>
+      <a href="checkout.html">Checkout Template</a><br>
+      <a href="#citations">Citations</a>
+    </nav>
+
+  </section>
+
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+    <h2>Interactive Elements</h2>
+
+
+    <section class="element">
+      <h3>In-text link</h3>
+      <a href = "https://www.starbucksreserve.com/en-us/coffee/archive" class="in-text-style">Our Coffees</a>
+    </section>
+
+
+    <!-- Default Button styling section -->
+    <section class="element">
+
+      <h3>Navigation Link</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.button-nav</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <a class="button-nav" href="#">Default Button</a>
+
+    </section>
+
+
+    <!-- Submit button styling section -->
+    <section class="element">
+      <h3>Submit/Reset Buttons</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.button-submit</p>
+
+      <h4>Sample code:</h4>
+      <code>&lt;a href="#" class="button-submit"&gt;Submit&lt;/a&gt;</code>
+
+      <h4>Rendered element:</h4>
+      <a class="button-submit" href="#">Submit</a>
+    </section>
+
+
+    <!-- Text Input Field with Label styling section -->
+    <section class="element">
+      <h3>Text Input Field with Label</h3>
+
+      <h4>CSS selector:</h4>
+      <p>text</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;form&gt; <br>
+        &nbsp;&lt;label&gt;Starbucks Card number: &lt;/label&gt; <br>
+        &nbsp;&lt;input type="text" name="number"&gt;
+        &lt;/form&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <form>
+        <label>Starbucks Card number: </label><br>
+        <input type="text">
+      </form>
+    </section>
+
+
+    <!-- Radio Button with Label styling section -->
+    <section class="element">
+      <h3>Radio Button with Label</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.payment-method, .checkmark</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;label class="payment-method"&gt;Fruity <br>
+        &nbsp;&lt;input type="radio" name="radio"&gt; <br>
+        &nbsp;&lt;span class="checkmark"&gt;&lt;/span&gt;
+        &lt;/label&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <p>Payment Method:</p>
+      <label class="payment-method">Visa
+        <input type="radio" checked="checked" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="payment-method">MasterCard
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="payment-method">Paypal
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+      <label class="payment-method">Starbucks Rewards Card
+        <input type="radio" name="radio">
+        <span class="checkmark"></span>
+      </label>
+
+    </section>
+
+
+    <!-- Image as a Link styling section -->
+    <section class="element">
+      <h3>Image as a Link</h3>
+
+      <h4>CSS selector:</h4>
+      <p>.image-main</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;a href="https://www.starbucksreserve.com/en-us"&gt;
+        &lt;img src="sources/starbucks-logo.png" alt="HTML tutorial" style="width:30%"&gt;
+        &lt;/a&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <a href="https://www.starbucksreserve.com/en-us">
+        <img src="sources/starbucks-logo.png" alt="HTML tutorial" style="width:100%">
+      </a>
+    </section>
+
+  </section>
+
+
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+    <h2>Text Elements</h2>
+
+    <section class="element">
+      <h3>Headings</h3>
+      <h4>CSS selector:</h4>
+      <p>h2, h3, h4, h5</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;h2&gt;About Us&lt;/h2&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <h2>About Us</h2>
+      <h3>Our Heritage</h3>
+      <h4>The Story of Starbucks Coffee Canada</h4>
+      <h5>Support Us</h5>
+    </section>
+
+
+    <section class="element">
+      <h3>Paragraphs</h3>
+
+      <h4>CSS selector:</h4>
+      <p>p</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;p&gt;The first Starbucks to open in...&lt;/p&gt;
+      </code>
+
+      <h4>Rendered element:</h4>
+      <p>The first Starbucks to open in Canada was at the Seabus Skytrain Station in Vancouver on March 1, 1987. This humble store was Starbucks Coffee’s first international location, and since then Canadians have been embracing the Starbucks Experience in more than 1,070 company-operated and licensed locations across Canada.
+
+        In 1996, Starbucks opened for business in Toronto, Ontario, with five stores opening their doors on the same day. Today, you can find our stores from Victoria, British Columbia to Toronto, Ontario; from Halifax, Nova Scotia to its most northerly coffeehouse in Whitehorse, Yukon.
+
+        To support the growing business, Starbucks invested in the region’s infrastructure by establishing a regional support centre in Toronto and now there are offices also located in Vancouver, Calgary, and Montreal. </p>
+      </section>
+
+
+      <!-- Numbered lists styling section -->
+      <section class="element">
+        <h3>Numbered Lists</h3>
+
+        <h4>CSS selector:</h4>
+        <p>ol</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;ol type="1"&gt;
+          &lt;li&gt;Choose a Coffee&lt;/li&gt;
+          &lt;/ol&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <ol type="1">
+          <li>Choose a Coffee</li>
+          <li>Choose a Size</li>
+          <li>Customize</li>
+          <li>Order and Pay</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+      <h2>Combined Elements</h2>
+
+      <!-- Section: Main navigation -->
+      <section class="element">
+        <h3>Main Navigation</h3>
+
+        <h4>CSS selector:</h4>
+        <p>nav</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;nav&gt;
+          &lt;a href="#about_us"&gt;About Us&lt;/a&gt;
+          &lt;/nav&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <nav>
+          <a href="#about_us">About Us</a><br>
+          <a href="#events">Events</a><br>
+          <a href="#our_locations">Our Locations</a><br>
+          <a href="#coffee">Our Coffees</a><br>
+          <a href="https://www.starbucksreserve.com/en-us/visit">Contact Us</a>
+        </nav>
+      </section>
+
+
+      <!-- Section: Product/ service Listing -->
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+        <h4>CSS selector: </h4>
+        <p>.container, .block</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;div class="container"&gt;<br>
+          &nbsp;&lt;div class="block"&gt;<br>
+          &nbsp;&nbsp;&lt;h4&gt;SUN-DRIED BRAZIL VALE VERDE ESTATE&lt;/h4&gt;<br>
+          &nbsp;&nbsp;&lt;a href = "https://www.starbucksreserve.com/en-us/coffee/sun-dried-brazil-vale-verde-estate"&gt;<br>
+          &nbsp;&nbsp;&nbsp;&lt;img src="sources/SDBrazilValeVerde.jpg" alt="HTML tutorial" style="width:100%"&gt;<br>
+          &nbsp;&nbsp;&lt;a&gt;<br>
+          &nbsp;&nbsp;&lt;h5&gt;$85&lt;br&gt;&lt;a href = "checkout.html" class="in-text-style"&gt;add to cart&lt;/a&gt;&lt;/h5&gt;<br>
+          &nbsp;&lt;/div&gt;<br>
+          &lt;/div&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <div class="container">
+          <div class="block">
+            <h4>SUN-DRIED BRAZIL VALE VERDE</h4>
+            <a href="https://www.starbucksreserve.com/en-us/coffee/sun-dried-brazil-vale-verde-estate">
+              <img src="sources/SDBrazilValeVerde.jpg" alt="HTML tutorial" style="width:100%">
+            </a>
+            <h5>$85<br><a href = "checkout.html" class="in-text-style">add to cart</a></h5>
+          </div>
+
+          <div class="block">
+            <h4>GUATEMALA LA COLINA FARM</h4>
+            <a href="https://www.starbucksreserve.com/en-us/coffee/guatemala-la-colina-farm">
+              <img src="sources/GuatLaColinaFarm.jpg" alt="HTML tutorial" style="width:100%">
+            </a>
+            <h5>$85<br><a href = "checkout.html" class="in-text-style">add to cart</a></h5>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Section: Payment Form -->
+      <section class="element">
+        <h3>Payment Form</h3>
+        <h4>CSS selector:</h4>
+        <p>.payment-method, .checkmark</p>
+
+        <h4>Sample code:</h4>
+        <code>
+          &lt;label class="payment-method"&gt;Visa<br>
+          &nbsp;&lt;input type="radio" checked="checked" name="radio"&gt;<br>
+          &nbsp;&lt;span class="checkmark"&gt;&lt;/span&gt;<br>
+          &lt;/label&gt;<br><br>
+
+          &lt;form&gt;<br>
+          &nbsp;&lt;/div&gt;&lt;label&gt;Starbucks Rewards Card number: &lt;/label&gt;<br>
+          &nbsp;&lt;/div&gt;&lt;input type="text" name="number"&gt;<br>
+          &lt;/form&gt;<br>
+          &lt;a class="button-submit" href="#">Submit&lt;/a&gt;
+        </code>
+
+        <h4>Rendered element:</h4>
+        <label class="payment-method">Visa
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="payment-method">MasterCard
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="payment-method">Paypal
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="payment-method">Card number:
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+
+      <br>
+
+      <form>
+        <label>Starbucks Rewards Card number: </label><br>
+        <input type="text" name="number">
+      </form><br>
+      <a class="button-submit" href="#">Submit</a>
+    </section>
+
+
+    <!-- Section: Checkout Cart -->
+    <section class="element">
+      <h3>Checkout Cart</h3>
+      <h4>CSS selector: </h4>
+      <p>.container-checkout, .block-checkout</p>
+
+      <h4>Sample code:</h4>
+      <code>
+        &lt;div class="container-checkout"&gt;<br>
+        &nbsp;&lt;div class="block-checkout"&gt;<br>
+        &nbsp;&nbsp;&lt;h4&gt;COLOMBIA HUILA PINK BOURBON&lt;/h4&gt;<br>
+        &nbsp;&nbsp;&lt;img src="sources/ColombiaHuilaPinkBourbon.jpg" alt="HTML tutorial" style="width:100%"&gt;<br>
+        &nbsp;&nbsp;&lt;h5&gt;C$95 (12oz, 340g)&lt;/h5&gt;<br>
+        &nbsp;&lt;/div&gt;<br>
+        &lt;/div&gt;
+      </code>
+
+      <div class="container-checkout">
+        <div class="block-checkout">
+          <h4>COLOMBIA HUILA PINK BOURBON</h4>
+          <img src="sources/ColombiaHuilaPinkBourbon.jpg" alt="HTML tutorial" style="width:100%">
+          <h5>C$95 (12oz, 340g)</h5>
+        </div>
+
+        <div class="block-checkout">
+          <h4>PRINCI™ BLEND</h4>
+          <img src="sources/PrinciBlend.jpg" alt="HTML tutorial" style="width:100%">
+          <h5>C$100 (16oz, 453g)</h5>
+        </div>
+
+        <div class="block-checkout">
+          <h4>SUN-DRIED BRAZIL VALE VERDE ESTATE</h4>
+          <img src="sources/SDBrazilValeVerde.jpg" alt="HTML tutorial" style="width:100%">
+          <h5>C$85 (16oz, 440g)</h5>
+        </div>
+      </div>
+
+      <h4>Total Amount: C$195</h4>
+    </section>
+
+  </section>
+
+
+  <!-- // Brand components -->
+  <section class="element">
+    <h3>Color Palettes</h3>
+    <img src="sources/color.png" alt="HTML tutorial" style="width:50%">
+    <p>
+      <br>Brandy Punch #D0842B<br>White #FFFFFF<br>Ship Gray #3F3F41<br>Thunder #322E30<br>Black #050505
+  </section>
+
+  <section class="element">
+    <h3>Font</h3>
+    <p>UBUNTU (sans-serif): For headings </p>
+    <p>SOURCE CODE PRO (open-sans): For main headings, navigation, paragraphs, forms</p>
+  </section>
+
+  <section class="element">
+    <h3>The Brand</h3>
+    <p>STARBUCKS RESERVE &trade; offers the rarest, most extraordinary coffees. They push their own boundaries of craft, developing a unique roast for each individual customer lot before experimenting with coffee as an art form—brewing, aging, infusing and blending it into imaginative and often surprising creations. They target men and women aged from 25 to 40 (young adults to adults) by offering a pleasurable and relaxed customer experience.</p>
+  </section>
+
+  <section class="element">
+    <h3>Persona</h3>
+    <p>Hip Hannah <br>
+      - Social Media Marketing Manager <br>
+      - Single working women, age 32 <br>
+      - Innovative, enjoy work life balance; having early Skype meeting in most of work days <br>
+      - Work at home often <br>
+      - Morning coffee make her day</p>
+      <img src="sources/persona.jpg" alt="HTML tutorial" style="width:30%" id="style_guide">
+    </section>
+
+    <!-- CITATIONS -->
+  <section id="citations">
+    <section class="element">
+      <h2>Citations</h2>
+      <ul>
+        <li>Dalton Maag. Designer. 2010. <strong>Ubuntu [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Ubuntu">https://fonts.google.com/specimen/Ubuntu</a></li>
+        <li>Paul D. Hunt. Designer. 2012. <strong>Source Code Pro [Font]</strong>. Retrieved from <a href="https://fonts.google.com/specimen/Source+Code+Pro">https://fonts.google.com/specimen/Source+Code+Pro</a></li>
+        <li>Starbucks Corperation. 2019. <strong>Starbucks products' images [Image]</strong>. Retrieved from <a href="https://www.starbucksreserve.com/en-us/coffee/archive">https://www.starbucksreserve.com/en-us/coffee/archive</a></li>
+        <li>Seatacshops.com. n.d. <strong>Persona's image [Image]</strong>. Retrieved from <a href="http://www.seatacshops.com/merchants/concourse-c/starbucks/">http://www.seatacshops.com/merchants/concourse-c/starbucks/</a></li>
+      </ul>
+    </section>
+  </section>
+
+
+
+  </body>
+  </html>
